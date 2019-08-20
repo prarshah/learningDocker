@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+spec:
+	type: LoadBalancer
+	ports:
+		- containerPort: 80
+		  targetPort: 8080
+	selector:
+		    app: web-application-app
+		    name: web-application
+metadata: 
+	name: redis
+	labels: web-application-app	
+

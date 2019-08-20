@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-application-pod
+  labels:
+    app: web-application-app
+    name: web-application
+spec:
+  containers:
+    - name: web-application-container
+      image: gcr.io/google-samples/gb-frontend:v4
